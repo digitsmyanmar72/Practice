@@ -1,19 +1,18 @@
-// Import express
+//importing the express module
 const express = require("express");
-
-// Create app
+//Createing an express application instance
 const app = express();
-
-// Define a route for "/api/people" and get request handler
-app.get("/api/people", function(req, res) {
+//Defining a route for "api/people" with a get result
+app.get("../api/people",function(req,res){
     const data = [
-        { name: "Nay", age: 41 },
-        { name: "John", age: 30 }  // Adding another object to demonstrate consistent structure
+        {name: "nay"},
+        {age : 41},
     ];
-    res.status(200).json(data);
+    return res.status(200),json(data);
+
+})
+//starting the server and listenting on port 8000
+app.listen(8000,function(){
+    console.log("serving is runnign on port 8000")
 });
 
-// Listen on port 8000
-app.listen(8000, function() {
-    console.log("Server is running on port 8000");
-});
