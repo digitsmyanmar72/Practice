@@ -5,5 +5,7 @@ const app = express ();
 //defining a route for "/api/people" with a get request
 app.get("/api/people",function(req,res){
 
+
+    
 });
 
