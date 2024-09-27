@@ -1,2 +1,5 @@
-import random
-print(random.randrange(1,10))
+# Modify Strings
+a = "hello"
+print(a.upper())
+
+#Remove Whitespace
