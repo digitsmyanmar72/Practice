@@ -1,1 +1,1 @@
-print ("hello")
+# booen but skip to classes
