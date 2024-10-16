@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "g": "^2.0.1",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "practice": "file:"
   }
 }
