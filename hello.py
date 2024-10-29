@@ -1,1 +1,1 @@
-#string method
+#python data type/ setting the data type
