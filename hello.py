@@ -1,2 +1,1 @@
-#Python string / check string
-
+# Python opperator
