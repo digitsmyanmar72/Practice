@@ -1,4 +1,7 @@
-#Python List/ Remove the list item
+#Python - Loop Lists
+
+
+
 thislist = ["apple", "banana", "cherry"]
-del thislist[0]
+thislist.extend
 print(thislist)
