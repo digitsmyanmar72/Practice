@@ -1,4 +1,6 @@
-#Python Tuples
+#Python - Add Set Items
+thisset = {"apple", "banana", "cherry"}
 
-thistuple = ("apple", "banana", "cherry")
-print(thistuple)
+thisset.add("orange")
+
+print(thisset)
