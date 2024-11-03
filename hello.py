@@ -1,8 +1,4 @@
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = []
+#Python Tuples
 
-for x in fruits:
-  if "c" in x:
-    newlist.append(x)
-
-print(newlist)
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
