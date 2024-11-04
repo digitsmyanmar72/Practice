@@ -1,2 +1,10 @@
-thislist = ["apple", "banana", "cherry"]
-[print(e) for e in thislist]
+#Python / Dictionaries
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+
+print(len(thisdict))
