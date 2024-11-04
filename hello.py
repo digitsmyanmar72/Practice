@@ -1,4 +1,4 @@
-#Python / Dictionaries
+#Python / Dictionaries / Remove items
 
 thisdict = {
   "brand": "Ford",
@@ -7,4 +7,5 @@ thisdict = {
 }
 
 
-print(len(thisdict))
+thisdict.popitem()
+print(thisdict)
