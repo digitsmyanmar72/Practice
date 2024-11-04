@@ -1,6 +1,6 @@
-#Python - Add Set Items
-thisset = {"apple", "banana", "cherry"}
+#Python Function
 
-thisset.add("orange")
-
-print(thisset)
+def myfun():
+    print("hello")
+    
+myfun()
