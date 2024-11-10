@@ -1,4 +1,1 @@
-# Python file handling
-
-f = open("demofile.txt", "r")
-print(f.read())
+f = open("myfile.txt", "x")
