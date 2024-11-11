@@ -1,0 +1,10 @@
+Issues:
+Route Path Error:
+
+The path defined in app.get("../api/people", ...) is incorrect. It should be "/api/people".
+Syntax Error:
+
+There is a typo in res.status(200),json(data);. It should be res.status(200).json(data); (use a dot . instead of a comma ,).
+Console Message Typo:
+
+The console.log message contains a typo: "serving is runnign on port 8000". It should be "server is running on port 8000".
