@@ -1,9 +1,7 @@
-class person:
- def __init__(self,name,age):
-     self.name = name
-     self.age = age
-p1 = person("Jon",41)
+#Python Modules / built-in modules
+import mymodule
 
-print(type(p1))
+mymodule.greeting("Jonathan")
 
-# 12.11.2024 / 11:46 PM
+a = mymodule.person1["age"]
+print(a)
