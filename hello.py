@@ -1,9 +1,9 @@
 #Python Modules / built-in modules
-import mymodule as naywin
+import mymodule 
 
-naywin.greeting("Jonathan")
+mymodule.greeting("Jonathan")
 
-a = naywin.person1["age"]
+a = mymodule.person1["age"]
 print(a)
 
 import platform # build in modules
