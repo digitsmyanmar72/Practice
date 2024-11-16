@@ -3,6 +3,7 @@ import mymodule
 
 mymodule.greeting("Jonathan")
 
+
 a = mymodule.person1["age"]
 print(a)
 
@@ -15,4 +16,4 @@ print(x)
 import platform
 
 x = dir(platform)
-print(x)
+print(x) 
