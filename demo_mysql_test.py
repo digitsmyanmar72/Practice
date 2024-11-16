@@ -3,12 +3,16 @@ import mysql.connector
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="80008000"
+  password="80008000",
+  database="mydatabase"
 )
 
 mycursor = mydb.cursor()
 
-mycursor.execute("SHOW DATABASES")
+sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+val = ("John", "Highway 21")
+mycursor.execute(sql, val)
 
-for x in mycursor:
-  print(x)
+mydb.commit()
+
+print(mycursor.rowcount, "record inserted.")
