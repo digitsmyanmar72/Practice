@@ -1,7 +1,7 @@
 import pymongo
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-mydb = myclient["mydatabase"]
+mydb = myclient["mydatabase1"]
 mycol = mydb["customers"]
 
 mylist = [
@@ -19,10 +19,6 @@ mylist = [
   { "name": "Viola", "address": "Sideway 1633"}
 ]
 
-x = mycol.insert_many(mylist)
+mycol.insert_many(mylist)
 
-#print list of the _id values of the inserted documents:
-print(x.inserted_ids)
-
-print(mylist[4])
-
+print(len(mylist))

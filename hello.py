@@ -1,19 +1,10 @@
-#Python Modules / built-in modules
-import mymodule 
+import json
 
-mymodule.greeting("Jonathan")
+# some JSON:
+x =  '{ "name":"John", "age":30, "city":"New York"}'
 
+# parse x:
+y = json.loads(x)
 
-a = mymodule.person1["age"]
-print(a)
-
-import platform # build in modules
-
-x = platform.system()
-print(x)
-
-#Using the dir() Function
-import platform
-
-x = dir(platform)
-print(x) 
+# the result is a Python dictionary:
+print(y["age"])
