@@ -21,4 +21,4 @@ mylist = [
 
 mycol.insert_many(mylist)
 
-print(mylist[5:8])
+print(mylist[3])

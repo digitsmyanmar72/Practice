@@ -4,15 +4,10 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="80008000",
-  database="mydatabase"
+  database="naydb1"
 )
 
 mycursor = mydb.cursor()
 
-sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
-val = ("John", "Highway 21")
-mycursor.execute(sql, val)
+mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
 
-mydb.commit()
-
-print(mycursor.rowcount, "record inserted.")
