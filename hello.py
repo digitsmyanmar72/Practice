@@ -1,10 +1,6 @@
-import json
+import pandas as pd
 
-# some JSON:
-x =  '{ "name":"John", "age":30, "city":"New York"}'
+a = [1, 7, 2]
 
-# parse x:
-y = json.loads(x)
-
-# the result is a Python dictionary:
-print(y["age"])
+myvar = pd.Series(a)
+print(myvar[2])
