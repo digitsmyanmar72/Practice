@@ -1,6 +1,11 @@
-import pandas as pd
+class Person:
+  def __init__(self, fname, lname,gra):
+    self.firstname = fname
+    self.lastname = lname
+    self.grau = gra
 
-a = [1, 7, 2]
+  def printname(self):
+    print(self.firstname, self.lastname,self.grau)
 
-myvar = pd.Series(a)
-print(myvar[2])
+obj = Person("nay","aung",15)
+obj.printname()
