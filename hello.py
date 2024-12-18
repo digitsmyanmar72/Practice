@@ -1,11 +1,13 @@
-class Person:
-  def __init__(self, fname, lname,gra):
+class myclass:
+  def __init__(self,fname,lname):
     self.firstname = fname
     self.lastname = lname
-    self.grau = gra
+  def myfunc(self):
+    print(self.firstname,self.lastname)
 
-  def printname(self):
-    print(self.firstname, self.lastname,self.grau)
+myobj = myclass ("nay","aung")
+class son(myclass):
+  pass
 
-obj = Person("nay","aung",15)
-obj.printname()
+sonobj = son("win","aye")
+sonobj.myfunc()
